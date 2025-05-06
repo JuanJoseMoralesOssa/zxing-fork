@@ -192,7 +192,7 @@ public final class MinimalEncoder {
 
       if (thirdsCount % 3 == 0 || ((thirdsCount - 2) % 3 == 0 && i + 1 == input.length())) {
         characterLength[0] = i - from + 1;
-        return (int) Math.ceil(((double) thirdsCount) / 3.0);
+        return (int) Math.ceil(thirdsCount / 3.0);
       }
     }
     characterLength[0] = 0;
